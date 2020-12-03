@@ -19,7 +19,7 @@ CREATE TABLE `recipe`.`users` (
   `displayName` VARCHAR(50) NULL,
   `joinDate` DATETIME NULL,
   `lastLogin` DATETIME NULL,
-  `roleID` INT NULL,
+  `role` VARCHAR(20) NULL DEFAULT 'Read',
   PRIMARY KEY (`id`));
 
 CREATE TABLE `recipe`.`ingredients` (
@@ -38,11 +38,6 @@ CREATE TABLE `recipe`.`unitofmeasure` (
   `abreviation` VARCHAR(15) NULL,
   `fullName` VARCHAR(50) NULL,
   `showFlag` VARCHAR(1) NULL DEFAULT 'Y',
-  PRIMARY KEY (`id`));
-
-CREATE TABLE `recipe`.`roles` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `role` VARCHAR(15) NULL,
   PRIMARY KEY (`id`));
 
 CREATE TABLE `recipe`.`incidents` (
