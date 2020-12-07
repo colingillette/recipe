@@ -9,6 +9,7 @@ class User {
     private $joinDate;
     private $lastLogin;
     private $role;
+    private $isLoggedIn;
 
     function __constructor() {
         $this->id = 0;
@@ -16,7 +17,8 @@ class User {
         $this->displayName = "";
         $this->joinDate = "01-01-2020";
         $this->lastLogin = "01-01-2020";
-        $this->role = Roles::Deleted;
+        $this->role = Roles::Read;
+        $this->isLoggedIn = false;
     }
 
     public function getId() {
@@ -65,6 +67,14 @@ class User {
 
     public function setRole($data) {
         $this->role = $data;
+    }
+
+    public function getIsLoggedIn() {
+        return $this->isLoggedIn;
+    }
+
+    public function setIsLoggedIn($data) {
+        $this->isLoggedIn = $data;
     }
 }
 
