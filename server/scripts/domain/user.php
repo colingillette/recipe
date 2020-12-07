@@ -11,7 +11,7 @@ class User {
     private $role;
     private $isLoggedIn;
 
-    function __constructor() {
+    public function __construct() {
         $this->id = 0;
         $this->username = "";
         $this->displayName = "";

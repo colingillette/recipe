@@ -9,7 +9,7 @@ class Ingredient {
     private $amount;
     private $displayOrder;
 
-    function __constructor() {
+    function __construct() {
         $this->id = 0;
         $this->name = "";
         $this->unitOfMeasure = new UnitOfMeasure();

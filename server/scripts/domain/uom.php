@@ -5,7 +5,7 @@ class UnitOfMeasure {
     private $abreviation;
     private $fullName;
 
-    function __constructor() {
+    function __construct() {
         $this->id = 0;
         $this->abreviation = "";
         $this->fullName = "";

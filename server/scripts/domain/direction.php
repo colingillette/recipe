@@ -5,7 +5,7 @@ class Direction {
     private $content;
     private $displayOrder;
 
-    function __constructor() {
+    function __construct() {
         $this->id = 0;
         $this->content = "";
         $this->displayOrder = 0;

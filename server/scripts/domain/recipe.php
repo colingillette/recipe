@@ -13,7 +13,7 @@ class Recipe {
     private $ingredients = array();
     private $directions = array();
 
-    function __constructor() {
+    function __construct() {
         $this->id = 0;
         $this->name = "";
         $this->description = "";
