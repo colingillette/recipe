@@ -1,11 +1,11 @@
-<?php $activeTab = "index" ?>
+<?php $activeTab = "signup" ?>
 
 <!doctype html>
 
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>recipe</title>
+    <title>recipe - signup</title>
     <meta name="author" content="SitePoint">
     <?php include_once("resources/cdn.php"); ?>
 </head>
